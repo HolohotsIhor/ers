@@ -551,6 +551,7 @@ header {
 /* 5.  Form box */
 .form-box {
     padding: 60px 0 0 0;
+    color: #03232e;
 
     .__form-container {
 
@@ -566,22 +567,53 @@ header {
         }
 
         .radiobuttons {
-            margin-bottom: 20px;
+            display: inline-block;
+            width: 100%;
+            padding-top: 15px;
+            padding-bottom: 45px;
+            border-bottom: solid 1px #ecf0f5;
+
+            br {
+                display: none;
+            }
 
             span {
                 width: 100%;
-                display: block;
+                display: inline-block;
                 font-weight: bold;
                 font-size: 14px;
+                margin-bottom: 0;
+                float: left;
+                color: #8c8f91;
+                border: solid 1px #ecf0f5;
+                width: auto;
+                padding: 9.5px 15px 5.5px 15px;
+                transition: .2s;
+                cursor: pointer;
 
-                &:first-child {
-                    font-size: 16px;
+                &:first-child{
+                    margin-right: 29px;
                 }
 
+                &:hover, &.active{
+                    border: solid 1px #cba643;
+                }
 
-
-                input {
+                input[type="radio"] {
                     margin-left: 20px;
+                     -webkit-appearance: none;
+                     border: none;
+                    float: left;
+                    display: block;
+                    width: 22px;
+                    height: 22px;
+                    margin-right: 12px;
+                    margin-left: 0;
+                    background: url('../img/button-bg.png') left center no-repeat;
+                }
+
+                input[type="radio"]:checked {
+                    background: url('../img/button-bg-checked.png') left center no-repeat;
                 }
             }
         }
@@ -615,6 +647,7 @@ header {
                     font-size: 14px;
                     color: #03232e;
                     margin-bottom: 0;
+                    padding-left: 15px;
                 }
             }
 
@@ -630,7 +663,8 @@ header {
                 }
 
 
-                &:nth-child(3), &:nth-child(5) {
+                &:nth-child(3),
+                &:nth-child(5) {
 
                     @media (min-device-width: 768px) {
                         margin-right: 0;
@@ -648,6 +682,15 @@ header {
 
                     @media (min-device-width: 768px) {
                         display: none;
+                    }
+                }
+            }
+
+            .text-box{
+
+                p{
+                    &:nth-child(1){
+                        margin-bottom: 40px;
                     }
                 }
             }
@@ -714,21 +757,47 @@ header {
             }
 
             .wpcf7-submit {
-                background-color: $gold;
+                background-color: #cca643;
                 border: 0;
-                padding: 13px 60px 10px 60px;
-                border-radius: 50px;
+                padding: 20px 83px 14px 83px;
                 cursor: pointer;
                 color: $white;
                 font-weight: bold;
                 text-transform: uppercase;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 transition: .2s;
+                font-size: 16px;
 
                 &:hover {
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
                 }
             }
+        }
+    }
+
+    .text-box{
+
+        .short-content{
+            margin-bottom: 40px;
+        }
+
+        h4, p{
+            font-size: 15px;
+            font-weight: normal;
+            line-height: 20px;
+        }
+
+        .pict-box{
+            text-align: center;
+
+            img, source{
+                width: 125px;
+                margin-bottom: 20px;
+            }
+        }
+
+        textarea{
+            height: 120px;
         }
     }
 }
