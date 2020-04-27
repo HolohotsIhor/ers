@@ -500,167 +500,227 @@ header {
 .form-box {
   padding: 60px 0 0 0;
   color: #03232e; }
-  .form-box .__form-container h2 {
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #010101;
-    margin-bottom: 40px; }
-  .form-box .__form-container .employee-form-box {
-    display: none; }
-  .form-box .__form-container .radiobuttons {
-    display: inline-block;
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 45px;
-    border-bottom: solid 1px #ecf0f5; }
-    .form-box .__form-container .radiobuttons br {
-      display: none; }
-    .form-box .__form-container .radiobuttons span {
-      width: 100%;
-      display: inline-block;
-      font-weight: bold;
-      font-size: 14px;
-      margin-bottom: 0;
-      float: left;
-      color: #8c8f91;
-      border: solid 1px #ecf0f5;
-      width: auto;
-      padding: 9.5px 15px 5.5px 15px;
-      -webkit-transition: .2s;
-      -o-transition: .2s;
-      transition: .2s;
-      cursor: pointer; }
-      .form-box .__form-container .radiobuttons span:first-child {
-        margin-right: 29px; }
-      .form-box .__form-container .radiobuttons span:hover, .form-box .__form-container .radiobuttons span.active {
-        border: solid 1px #cba643; }
-      .form-box .__form-container .radiobuttons span input[type="radio"] {
-        margin-left: 20px;
-        -webkit-appearance: none;
-        border: none;
-        float: left;
-        display: block;
-        width: 22px;
-        height: 22px;
-        margin-right: 12px;
-        margin-left: 0;
-        background: url("../img/button-bg.png") left center no-repeat; }
-      .form-box .__form-container .radiobuttons span input[type="radio"]:checked {
-        background: url("../img/button-bg-checked.png") left center no-repeat; }
-  .form-box .__form-container h4 {
-    margin-bottom: 20px; }
-  .form-box .__form-container .screen-reader-response {
-    display: none; }
-  .form-box .__form-container .wpcf7-not-valid-tip,
-  .form-box .__form-container .wpcf7-mail-sent-ok {
-    font-size: 12px;
-    color: red;
-    margin-bottom: 10px;
-    display: inline-block;
-    padding-left: 15px; }
-  .form-box .__form-container form {
-    width: 100%;
-    font-size: 14px; }
-    .form-box .__form-container form label {
-      display: inline-block;
-      width: 100%; }
-      .form-box .__form-container form label .title-box {
-        font-size: 14px;
-        color: #03232e;
-        margin-bottom: 0;
-        padding-left: 15px; }
-    .form-box .__form-container form p {
-      margin-bottom: 0;
-      display: inline-block;
-      width: 100%; }
-      @media (min-device-width: 768px) {
-        .form-box .__form-container form p {
-          width: 43%;
-          margin-right: 4%;
-          float: left; } }
-      @media (min-device-width: 768px) {
-        .form-box .__form-container form p:nth-child(3), .form-box .__form-container form p:nth-child(5) {
-          margin-right: 0; } }
-      @media (min-device-width: 992px) {
-        .form-box .__form-container form p:nth-child(10) {
-          margin-right: 7%; } }
-      @media (min-device-width: 768px) {
-        .form-box .__form-container form p br {
-          display: none; } }
-    .form-box .__form-container form .text-box p:nth-child(1) {
-      margin-bottom: 40px; }
-    .form-box .__form-container form span {
-      width: 100%;
-      margin-bottom: 30px;
-      display: inline-block; }
-      .form-box .__form-container form span.file-box {
-        margin-bottom: 0;
-        font-weight: bold;
-        margin-bottom: 10px; }
-        @media (min-device-width: 992px) {
-          .form-box .__form-container form span.file-box {
-            margin-bottom: 40px; } }
-        .form-box .__form-container form span.file-box input {
-          background-color: transparent;
-          border-bottom: 0;
-          padding-left: 0;
-          padding: 0;
-          display: inline-block;
-          width: auto; }
-          .form-box .__form-container form span.file-box input:focus {
-            outline: 0; }
-        .form-box .__form-container form span.file-box br {
-          display: none; }
-        .form-box .__form-container form span.file-box span {
-          margin-bottom: 0;
-          display: inline-block;
-          width: auto;
-          padding-left: 20px; }
-      .form-box .__form-container form span input,
-      .form-box .__form-container form span textarea {
-        max-height: 165px;
-        width: 100%;
-        padding: 6.5px 10px;
-        border: 0;
-        border: solid 1px #d5dee6;
-        border-radius: 0;
-        background-color: #fff;
-        font-size: 12px;
-        color: #03232e; }
-        @media (min-device-width: 992px) {
-          .form-box .__form-container form span input,
-          .form-box .__form-container form span textarea {
-            padding: 10px 15px; } }
-        .form-box .__form-container form span input:focus,
-        .form-box .__form-container form span textarea:focus {
-          outline-color: #ff7979; }
-    .form-box .__form-container form .wpcf7-submit {
-      background-color: #cca643;
-      border: 0;
-      padding: 20px 83px 14px 83px;
-      cursor: pointer;
-      color: #fff;
-      font-weight: bold;
+  .form-box .__form-container {
+    padding-bottom: 20px; }
+    .form-box .__form-container h2 {
+      font-size: 18px;
       text-transform: uppercase;
-      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      -webkit-transition: .2s;
-      -o-transition: .2s;
-      transition: .2s;
-      font-size: 16px; }
-      .form-box .__form-container form .wpcf7-submit:hover {
-        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0); }
-  .form-box .text-box .short-content {
-    margin-bottom: 40px; }
-  .form-box .text-box h4, .form-box .text-box p {
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 20px; }
-  .form-box .text-box .pict-box {
-    text-align: center; }
-    .form-box .text-box .pict-box img, .form-box .text-box .pict-box source {
-      width: 125px;
+      color: #010101;
+      margin-bottom: 40px; }
+    .form-box .__form-container .employee-form-box {
+      display: none; }
+    .form-box .__form-container .radiobuttons {
+      display: inline-block;
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 45px;
+      border-bottom: solid 1px #ecf0f5; }
+      .form-box .__form-container .radiobuttons br {
+        display: none; }
+      .form-box .__form-container .radiobuttons span {
+        width: 100%;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 0;
+        float: left;
+        color: #8c8f91;
+        border: solid 1px #ecf0f5;
+        width: auto;
+        padding: 9.5px 15px 5.5px 15px;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s;
+        cursor: pointer; }
+        .form-box .__form-container .radiobuttons span:first-child {
+          margin-right: 29px; }
+        .form-box .__form-container .radiobuttons span:hover, .form-box .__form-container .radiobuttons span.active {
+          border: solid 1px #cba643; }
+        .form-box .__form-container .radiobuttons span input[type="radio"] {
+          margin-left: 20px;
+          -webkit-appearance: none;
+          border: none;
+          float: left;
+          display: block;
+          width: 22px;
+          height: 22px;
+          margin-right: 12px;
+          margin-left: 0;
+          background: url("../img/button-bg.png") left center no-repeat;
+          cursor: pointer; }
+        .form-box .__form-container .radiobuttons span input[type="radio"]:checked {
+          background: url("../img/button-bg-checked.png") left center no-repeat; }
+        .form-box .__form-container .radiobuttons span input[type="radio"]:focus {
+          outline: 0; }
+    .form-box .__form-container h4 {
       margin-bottom: 20px; }
-  .form-box .text-box textarea {
-    height: 120px; }
+    .form-box .__form-container .screen-reader-response {
+      display: none; }
+    .form-box .__form-container .wpcf7-not-valid-tip,
+    .form-box .__form-container .wpcf7-mail-sent-ok {
+      font-size: 12px;
+      color: red;
+      margin-bottom: 10px;
+      display: inline-block;
+      padding-left: 15px; }
+    .form-box .__form-container form {
+      width: 100%;
+      font-size: 14px;
+      /*.wpcf7-file:hover::before {
+                border-color: black;
+            }*/ }
+      .form-box .__form-container form .text-box p {
+        width: 60%; }
+        .form-box .__form-container form .text-box p.short-content {
+          margin-bottom: 40px;
+          width: 100%; }
+      .form-box .__form-container form label {
+        display: inline-block;
+        width: 100%; }
+        .form-box .__form-container form label .title-box {
+          font-size: 14px;
+          color: #03232e;
+          margin-bottom: 0;
+          padding-left: 15px; }
+      .form-box .__form-container form p {
+        margin-bottom: 0;
+        display: inline-block;
+        width: 100%; }
+        @media (min-device-width: 768px) {
+          .form-box .__form-container form p {
+            width: 43%;
+            margin-right: 4%;
+            float: left; } }
+        @media (min-device-width: 768px) {
+          .form-box .__form-container form p:nth-child(3), .form-box .__form-container form p:nth-child(5) {
+            margin-right: 0; } }
+        @media (min-device-width: 992px) {
+          .form-box .__form-container form p:nth-child(10) {
+            margin-right: 7%; } }
+        @media (min-device-width: 768px) {
+          .form-box .__form-container form p br {
+            display: none; } }
+      .form-box .__form-container form .text-box p:nth-child(1) {
+        margin-bottom: 40px; }
+      .form-box .__form-container form span {
+        width: 100%;
+        margin-bottom: 30px;
+        display: inline-block; }
+        .form-box .__form-container form span.textarea-116 {
+          margin-bottom: 0; }
+        .form-box .__form-container form span.file-box {
+          margin-bottom: 0;
+          font-weight: bold;
+          margin-bottom: 10px; }
+          @media (min-device-width: 992px) {
+            .form-box .__form-container form span.file-box {
+              margin-bottom: 40px; } }
+          .form-box .__form-container form span.file-box input {
+            background-color: transparent;
+            border-bottom: 0;
+            padding-left: 0;
+            padding: 0;
+            display: inline-block;
+            width: auto; }
+            .form-box .__form-container form span.file-box input:focus {
+              outline: 0; }
+          .form-box .__form-container form span.file-box br {
+            display: none; }
+          .form-box .__form-container form span.file-box span {
+            margin-bottom: 0;
+            display: inline-block;
+            width: auto;
+            padding-left: 20px; }
+        .form-box .__form-container form span input,
+        .form-box .__form-container form span textarea {
+          max-height: 165px;
+          width: 100%;
+          padding: 6.5px 10px;
+          border: 0;
+          border: solid 1px #d5dee6;
+          border-radius: 0;
+          background-color: #fff;
+          font-size: 12px;
+          color: #03232e; }
+          @media (min-device-width: 992px) {
+            .form-box .__form-container form span input,
+            .form-box .__form-container form span textarea {
+              padding: 10px 15px; } }
+          .form-box .__form-container form span input:focus,
+          .form-box .__form-container form span textarea:focus {
+            outline-color: #ff7979; }
+      .form-box .__form-container form .wpcf7-file {
+        color: #fff;
+        border: 0;
+        padding-left: 0; }
+      .form-box .__form-container form .wpcf7-file:focus {
+        outline: 0; }
+      .form-box .__form-container form .wpcf7-file::-webkit-file-upload-button {
+        visibility: hidden; }
+      .form-box .__form-container form .wpcf7-file::before {
+        content: '+ Upload CV';
+        display: inline-block;
+        background: #cca643;
+        padding: 0 7px;
+        outline: none;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        cursor: pointer;
+        color: #fff;
+        font-weight: 700;
+        font-size: 12px; }
+      .form-box .__form-container form .wpcf7-file:active::before {
+        background: #cca643; }
+      .form-box .__form-container form .wpcf7-submit {
+        background-color: #cca643;
+        border: 0;
+        padding: 20px 83px 14px 83px;
+        cursor: pointer;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s;
+        font-size: 16px; }
+        .form-box .__form-container form .wpcf7-submit:hover {
+          -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0); }
+  .form-box .text-box {
+    display: none;
+    padding-top: 40px; }
+    .form-box .text-box h4,
+    .form-box .text-box p {
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 20px; }
+    .form-box .text-box .pict-box {
+      text-align: center; }
+      @media (min-device-width: 768px) {
+        .form-box .text-box .pict-box.mobile {
+          display: none; } }
+      .form-box .text-box .pict-box.desk {
+        display: none; }
+        @media (min-device-width: 768px) {
+          .form-box .text-box .pict-box.desk {
+            display: block;
+            float: right;
+            height: 360px;
+            border-left: solid 1px #f2f2f2;
+            padding-left: 5%;
+            margin-top: 30px;
+            width: 30%; } }
+      .form-box .text-box .pict-box picture br {
+        display: none; }
+      .form-box .text-box .pict-box img,
+      .form-box .text-box .pict-box source {
+        width: 125px;
+        margin-bottom: 20px; }
+        @media (min-device-width: 768px) {
+          .form-box .text-box .pict-box img,
+          .form-box .text-box .pict-box source {
+            width: 200px; } }
+    .form-box .text-box textarea {
+      height: 120px; }

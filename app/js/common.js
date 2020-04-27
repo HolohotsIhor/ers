@@ -9,6 +9,8 @@ $(document).ready(function() {
             $('.employeer-form-box').css("display", "block");
             $('.employee-form-box').css("display", "none");
             $('#employee').removeAttr('checked');
+            $('.text-box').css("display", "block");
+            $("#employeer").parent().addClass('active');
         }
 
         if (ckeckBoxStatus == false) {
@@ -25,6 +27,8 @@ $(document).ready(function() {
             $('.employee-form-box').css("display", "block");
             $('.employeer-form-box').css("display", "none");
             $('#employeer').removeAttr('checked');
+            $('.text-box').css("display", "block");
+            $("#employee").parent().addClass('active');
         }
 
         if (ckeckBoxStatus == false) {

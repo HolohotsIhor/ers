@@ -554,6 +554,7 @@ header {
     color: #03232e;
 
     .__form-container {
+        padding-bottom: 20px;
 
         h2 {
             font-size: 18px;
@@ -591,18 +592,19 @@ header {
                 transition: .2s;
                 cursor: pointer;
 
-                &:first-child{
+                &:first-child {
                     margin-right: 29px;
                 }
 
-                &:hover, &.active{
+                &:hover,
+                &.active {
                     border: solid 1px #cba643;
                 }
 
                 input[type="radio"] {
                     margin-left: 20px;
-                     -webkit-appearance: none;
-                     border: none;
+                    -webkit-appearance: none;
+                    border: none;
                     float: left;
                     display: block;
                     width: 22px;
@@ -610,10 +612,15 @@ header {
                     margin-right: 12px;
                     margin-left: 0;
                     background: url('../img/button-bg.png') left center no-repeat;
+                    cursor: pointer;
                 }
 
                 input[type="radio"]:checked {
                     background: url('../img/button-bg-checked.png') left center no-repeat;
+                }
+
+                input[type="radio"]:focus {
+                    outline: 0;
                 }
             }
         }
@@ -638,6 +645,18 @@ header {
         form {
             width: 100%;
             font-size: 14px;
+
+            .text-box {
+
+                p{
+                    width: 60%;
+
+                   &.short-content {
+                        margin-bottom: 40px;
+                        width: 100%;
+                    }
+                }
+            }
 
             label {
                 display: inline-block;
@@ -686,10 +705,10 @@ header {
                 }
             }
 
-            .text-box{
+            .text-box {
 
-                p{
-                    &:nth-child(1){
+                p {
+                    &:nth-child(1) {
                         margin-bottom: 40px;
                     }
                 }
@@ -699,6 +718,10 @@ header {
                 width: 100%;
                 margin-bottom: 30px;
                 display: inline-block;
+
+                &.textarea-116{
+                    margin-bottom: 0;
+                }
 
                 &.file-box {
                     margin-bottom: 0;
@@ -756,6 +779,43 @@ header {
                 }
             }
 
+            .wpcf7-file {
+                color: $white;
+                border: 0;
+                padding-left: 0;
+            }
+
+            .wpcf7-file:focus{
+                outline: 0;
+            }
+
+            .wpcf7-file::-webkit-file-upload-button {
+                visibility: hidden;
+
+            }
+
+            .wpcf7-file::before {
+                content: '+ Upload CV';
+                display: inline-block;
+                background: #cca643;
+                padding: 0 7px;
+                outline: none;
+                white-space: nowrap;
+                -webkit-user-select: none;
+                cursor: pointer;
+                color: $white;
+                font-weight: 700;
+                font-size: 12px;
+            }
+
+            /*.wpcf7-file:hover::before {
+                border-color: black;
+            }*/
+
+            .wpcf7-file:active::before {
+                background: #cca643;
+            }
+
             .wpcf7-submit {
                 background-color: #cca643;
                 border: 0;
@@ -775,28 +835,61 @@ header {
         }
     }
 
-    .text-box{
+    .text-box {
+        display: none;
+        padding-top: 40px;
 
-        .short-content{
-            margin-bottom: 40px;
-        }
-
-        h4, p{
+        h4,
+        p {
             font-size: 15px;
             font-weight: normal;
             line-height: 20px;
         }
 
-        .pict-box{
+        .pict-box {
             text-align: center;
 
-            img, source{
+
+            &.mobile{
+
+                @media (min-device-width: 768px) {
+                    display: none;
+                }
+            }
+
+            &.desk{
+                display: none;
+
+                @media (min-device-width: 768px) {
+                    display: block;
+                    float: right;
+                    height: 360px;
+                    border-left: solid 1px #f2f2f2;
+                    padding-left: 5%;
+                    margin-top: 30px;
+                    width: 30%;
+                }
+            }
+
+            picture{
+
+                br{
+                    display: none;
+                }
+            }
+
+            img,
+            source {
                 width: 125px;
                 margin-bottom: 20px;
+
+                @media (min-device-width: 768px) {
+                    width: 200px;
+                }
             }
         }
 
-        textarea{
+        textarea {
             height: 120px;
         }
     }
